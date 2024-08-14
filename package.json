@@ -1,0 +1,42 @@
+{
+  "name": "@adpro/text-elementalizer-core",
+  "version": "1.0.0",
+  "description": "A text elementalizer replacing the appropriate text with the name of the chemical material based on pinyin.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "./dist"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "getVersion": "tsc --noEmit && tsx ./scripts/version.ts",
+    "syncNpmmirror": "tsc --noEmit && tsx ./scripts/syncNpmmirror.ts"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adproqwq/text-elementalizer-core.git"
+  },
+  "keywords": [
+    "text-elementalizer"
+  ],
+  "author": "Adpro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adproqwq/text-elementalizer-core/issues"
+  },
+  "homepage": "https://github.com/adproqwq/text-elementalizer-core",
+  "devDependencies": {
+    "@types/node": "^22.2.0",
+    "tsx": "^4.17.0",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "pinyin-pro": "^3.24.2"
+  }
+}
