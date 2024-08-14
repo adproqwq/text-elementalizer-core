@@ -1,6 +1,6 @@
 {
   "name": "@adpro/text-elementalizer-core",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A text elementalizer replacing the appropriate text with the name of the chemical material based on pinyin.",
   "type": "module",
   "main": "dist/index.js",
