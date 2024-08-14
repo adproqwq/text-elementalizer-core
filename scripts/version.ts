@@ -1,6 +1,7 @@
-import packageJson from '../package.json'
+import packageJson from '../package.json';
+import { writeFile } from 'fs/promises';
 
-const getVersion = () => {
-  process.stdout.write(packageJson.version);
+const getVersion = async () => {
+  await writeFile('./version.txt', packageJson.version, 'utf-8');
 }
-getVersion();
+await getVersion();

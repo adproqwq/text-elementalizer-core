@@ -24,7 +24,8 @@ jobs:
 
       - id: version
         run: |
-          version=$(pnpm getVersion)
+          pnpm getVersion
+          version=$(cat version.txt)
           echo "version=${version}" >> "$GITHUB_OUTPUT"
 
       - name: Git commit
